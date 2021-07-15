@@ -10,6 +10,7 @@ dockerpath=anyaugo/udacity:app-sklearn-api
 
 # Step 2:  
 # Authenticate & tag
+cat ~/.docker_pass.txt | docker login --username anyaugo --password-stdin
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
